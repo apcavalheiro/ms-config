@@ -1,12 +1,11 @@
 server:
   port: 8080
-
   servlet:
     context-path: /gateway
 
 eureka:
   instance:
-    prefer-ip-address: true
+    hostname: localhost
     port: 9091
   client:
     registerWithEureka: true
