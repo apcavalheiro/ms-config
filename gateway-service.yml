@@ -5,7 +5,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    prefer-ip-address: true
     port: 9091
   client:
     registerWithEureka: true
