@@ -14,18 +14,18 @@ eureka:
     wait-time-in-ms-when-sync-empty: 3000
 
 spring:
-    datasource:
-        driver-class-name: com.mysql.jdbc.Driver
-        password: '1234'
-        platform: mysql
-        url: jdbc:mysql://localhost/delivery-order?verifyServerCertificate=false&useSSL=false&requireSSL=false
-        username: root
-    jpa:
-        database-platform: org.hibernate.dialect.MySQLDialect
-        generate-ddl: false
-        hibernate:
-            ddl-auto: create
-        show-sql: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: "1234"
+    platform: mysql
+    url: jdbc:mysql://localhost/delivery-order?verifyServerCertificate=false&useSSL=false&requireSSL=false
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: false
+    hibernate:
+      ddl-auto: create
+    show-sql: true
 
 authserver:
   hostname: http://localhost:9092
