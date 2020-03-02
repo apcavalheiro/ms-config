@@ -6,12 +6,14 @@ eureka:
     hostname: localhost
     port: 9091
   client:
-    registerWithEureka: true
-    fetchRegistry: false
-    serviceUrl:
+    service-url:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
-  server:
-    wait-time-in-ms-when-sync-empty: 3000
+    fetch-registry: true
+    register-with-eureka: true
 
 zuul:
   sensitive-headers: Cookie
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
